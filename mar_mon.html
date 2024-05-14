@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Marikina - Montalban</title>
+    <link rel="stylesheet" href="styles/design.css">
+    <link rel="stylesheet" href="styles/mar_mon.css">
+    <meta charset="UTF8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE-edge"/>
+    <meta name ="viewport" content="width=device-width, initial-scale=1 maximum-scale=1.0, user-scalable=no"/>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCpR0eK7UcvaY_zCyKB0UI24pU-Z7VB0XQ&libraries=visualization&callback=initMap&loading=async"  defer></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+
+<body>
+    <h1 class="marikit">MarikitTranspo</h1>
+    
+    <h3 class="jeepney_route">Marikina - Montalban</h3>
+    
+    <div class="column-container">
+        <div id="map_twentyFour"></div>
+        <div id="route-details-container"></div>
+ 
+</div>
+
+<div class="button-container">
+    <button class="return-button" onclick="goBack()">Return</button>
+</div>
+
+<div class="button-container">
+    <button class="button" id="startTrackingBtn">Sakay Na!</button>
+    <button class="button" id="stopTrackingBtn">Para Po!</button>
+    <button class="button">Save</button>
+</div>
+
+
+    <script>
+        function goBack() {
+            window.history.back();
+        }
+    </script>
+    <script src="marikina_to_montalban.js"></script>
+</body>
+
+</html>
