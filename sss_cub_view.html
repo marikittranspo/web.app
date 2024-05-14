@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>SSS Village-Cubao - Route View</title>
+    <link rel="stylesheet" href="styles/view.css">
+    <link rel="icon" href="pictures/mt_logo.png" type="image/x-icon">
+    <meta charset="UTF8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE-edge"/>
+    <meta name ="viewport" content="width=device-width, initial-scale=1 maximum-scale=1.0, user-scalable=no"/>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCpR0eK7UcvaY_zCyKB0UI24pU-Z7VB0XQ&libraries=visualization&callback=initMap&loading=async"  defer></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+
+<body>
+    <div class="header">
+        <a href="marikina_jeepney_routes.html">
+            <button class="back-button">
+              <span class="material-symbols-outlined" style="vertical-align: middle;">
+                arrow_back
+              </span>
+              Return
+            </button>
+          </a>
+        <a class="brand-name">
+            <h1 class="marikit">MarikitTranspo</h1>
+        </a>
+    </div>
+    
+    <h3 class="jeepney_route">SSS Village - Cubao</h3>
+    
+    <div class="route-container">
+        <div class="route">
+            <div clas="route-head">
+                <h2 class="route-header">Route Details</h2>
+            </div>
+            <div>
+                <ul class="route-details">
+                    <li>
+                        <span class="material-symbols-outlined">
+                            on_hub_device
+                            </span>
+                        <strong>SSS Village - Cubao</strong>
+                    </li>
+                    <li>
+                        <span class="material-symbols-outlined">
+                            arrows_outward
+                            </span>
+                        Runs between <strong>Panorama Terminal, Concepcion Dos</strong> and <strong>A. Bonifacio Ave., Barangka</strong>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="route">
+            <div clas="route-head">
+                <h2 class="route-header">Main Route</h2>
+            </div>
+            <div>
+                <div>
+                    <div class="column-container">
+                        <div id="map1" class="map-container"></div>
+                    </div>
+                    <div class="trips">    
+                        <div class="trip-header">
+                            <div class="stop-name"><strong>Route</strong></div>
+                        </div>
+                        <div class="row">
+                            <div class="stop-name height-adjust">Panorama Terminal</div>
+                        </div>
+                        <div class="row">
+                            <div class="stop-name height-adjust">Lilac St.</div>
+                        </div>
+                        <div class="row">
+                            <div class="stop-name height-adjust">Olive St.</div>
+                        </div>
+                        <div class="row">
+                            <div class="stop-name height-adjust">Olive St. / Carmine St.</div>
+                        </div>
+                        <div class="row">
+                            <div class="stop-name height-adjust">Russet St.</div>
+                        </div>
+                        <div class="row">
+                            <div class="stop-name height-adjust">Russet St. / Sapphire St. </div>
+                        </div>
+                        <div class="row">
+                            <div class="stop-name height-adjust">Rainbow St. </div>
+                        </div>
+                        <div class="row">
+                            <div class="stop-name height-adjust">Rainbow St. / Ivory St.</div>
+                        </div>
+                        <div class="row">
+                            <div class="stop-name height-adjust">Rainbow St. / Bronze St.</div>
+                        </div>
+                        <div class="row">
+                            <div class="stop-name height-adjust">Rainbow St. / Gold St.</div>
+                        </div>
+                        <div class="row">
+                            <div class="stop-name height-adjust">Rainbow St. / Lavender St.</div>
+                        </div>
+                        <div class="row">
+                            <div class="stop-name height-adjust">Rainbow St. / Azure St.</div>
+                        </div>
+                        <div class="row">
+                            <div class="stop-name height-adjust">Rainbow St. / Tagerine St.</div>
+                        </div>
+                        <div class="row">
+                            <div class="stop-name height-adjust">Rainbow St. / Maroon St.</div>
+                        </div>
+                        <div class="row">
+                            <div class="stop-name height-adjust">Rainbow St. / Magat Salamat St.</div>
+                        </div>
+                        <div class="row">
+                            <div class="stop-name height-adjust">Rainbow St. / J. M. Panganiban St.</div>
+                        </div>
+                        <div class="row">
+                            <div class="stop-name height-adjust">Katipunan St.</div>
+                        </div>
+                        <div class="row">
+                            <div class="stop-name height-adjust">Katipunan St. / Scarlet St.</div>
+                        </div>
+                        <div class="row">
+                            <div class="stop-name height-adjust">Katipunan St. / Purple St.</div>
+                        </div>
+                        <div class="row">
+                            <div class="stop-name height-adjust">Gen. Ordoñez St.</div>
+                        </div>
+                        <div class="row">
+                            <div class="stop-name height-adjust"> Gen. Ordoñez St. / T. Bugallion St.</div>
+                        </div>
+                        <div class="row">
+                            <div class="stop-name height-adjust"> Bayan Bayanan Ave</div>
+                        </div>
+                        <div class="row">
+                            <div class="stop-name height-adjust">Bayan-Bayanan Ave. / Meralco</div>
+                        </div>
+                        <div class="row">
+                            <div class="stop-name height-adjust">Bayan-Bayanan Ave. / Benedicto Compound</div>
+                        </div>
+                        <div class="row">
+                            <div class="stop-name height-adjust">Bayan-Bayanan Ave. / Saint Vincent</div>
+                        </div>
+                        <div class="row">
+                            <div class="stop-name height-adjust">L. De Guzman St. Loading/Unloading Bay</div>
+                        </div>
+                        <div class="row">
+                            <div class="stop-name height-adjust">F. Torres St.</div>
+                        </div>
+                        <div class="row">
+                            <div class="stop-name height-adjust">F. Torres St. / J. Molina St.</div>
+                        </div>
+                        <div class="row">
+                            <div class="stop-name height-adjust">Cepeda St.</div>
+                        </div>
+                        <div class="row">
+                            <div class="stop-name height-adjust">E.G. Manalo St.</div>
+                        </div>
+                        <div class="row">
+                            <div class="stop-name height-adjust">E.G. Manalo St. / Exequiel</div>
+                        </div>
+                        <div class="row">
+                            <div class="stop-name height-adjust">E.G. Manalo St. / Aquilina St.</div>
+                        </div>
+                        <div class="row">
+                            <div class="stop-name height-adjust">E.G. Manalo St. / E. Mendoza St.</div>
+                        </div>
+                        <div class="row">
+                            <div class="stop-name height-adjust">Guerilla St.</div>
+                        </div>
+                        <div class="row">
+                            <div class="stop-name height-adjust">Shoe Ave.</div>
+                        </div>
+                        <div class="row">
+                            <div class="stop-name height-adjust">Sumulong Highway / E. dela Paz St.</div>
+                        </div>
+                        <div class="row">
+                            <div class="stop-name height-adjust">Sumulong Highway / M. Cruz St.</div>
+                        </div>
+                        <div class="row">
+                            <div class="stop-name height-adjust">A. Bonifacio / A. Flores St.</div>
+                        </div>
+                        <div class="row">
+                            <div class="stop-name height-adjust">A. Bonifacio / Provident Village</div>
+                        </div>
+                        <div class="row">
+                            <div class="stop-name height-adjust">A. Bonifacio / Tañong</div>
+                        </div>
+                        <div class="row">
+                            <div class="stop-name height-adjust">A. Bonifacio / Marikina Riverbanks</div>
+                        </div>
+                        <div class="row">
+                            <div class="stop-name height-adjust">A. Bonifacio / Barangka Barangay Hall</div>
+                        </div>
+                        <div class="row">
+                            <div class="stop-name height-adjust">A. Bonifacio Ave</div>
+                        </div>
+                    </div>
+                    <div class="column-container">
+                        <div id="map2" class="map-container"></div>
+                    </div>
+                    <div class="trips">    
+                        <div class="trip-header">
+                            <div class="trip-name"><strong>Route</strong></div>
+                        </div>
+                        <div class="row">
+                            <div class="stop-name height-adjust">A. Bonifacio Ave.</div>
+                        </div>
+                        <div class="row">
+                            <div class="stop-name height-adjust">A. Bonifacio / Barangka Barangay Hall</div>
+                        </div>
+                        <div class="row">
+                            <div class="stop-name height-adjust">A. Bonifacio / Marikina Riverbanks</div>
+                        </div>
+                        <div class="row">
+                            <div class="stop-name height-adjust">A. Bonifacio / Tañong</div>
+                        </div>
+                        <div class="row">
+                            <div class="stop-name height-adjust">A. Bonifacio / Provident Village</div>
+                        </div>
+                        <div class="row">
+                            <div class="stop-name height-adjust">A. Bonifacio Ave. / A. Flores St. </div>
+                        </div>
+                        <div class="row">
+                            <div class="stop-name height-adjust">Sumulong Highway / M. Cruz St. </div>
+                        </div>
+                        <div class="row">
+                            <div class="stop-name height-adjust">Sumulong Highway / P. Burgos St. </div>
+                        </div>
+                        <div class="row">
+                            <div class="stop-name height-adjust">Shoe Ave. / V. Santos St.</div>
+                        </div>
+                        <div class="row">
+                            <div class="stop-name height-adjust">Guerilla</div>
+                        </div>
+                        <div class="row">
+                            <div class="stop-name height-adjust"> 2nd St.</div>
+                        </div>
+                        <div class="row">
+                            <div class="stop-name height-adjust"> E. Mendoza St.</div>
+                        </div>
+                        <div class="row">
+                            <div class="stop-name height-adjust">E. Santos / Aquilina St. Intersection</div>
+                        </div>
+                        <div class="row">
+                            <div class="stop-name height-adjust">E. Santos / Exequiel Intersection</div>
+                        </div>
+                        <div class="row">
+                            <div class="stop-name height-adjust">E. Santos / Cepeda St. Intersection</div>
+                        </div>
+                        <div class="row">
+                            <div class="stop-name height-adjust">E. Santos / J. Molina St. Intersection</div>
+                        </div>
+                        <div class="row">
+                            <div class="stop-name height-adjust">E. Santos / Candazo St.</div>
+                        </div>
+                        <div class="row">
+                            <div class="stop-name height-adjust">Mcdonald's Concepcion Loading/Unloading Bay</div>
+                        </div>
+                        <div class="row">
+                            <div class="stop-name height-adjust">Bayan-Bayanan Ave. / L. De Guzman St.</div>
+                        </div>
+                        <div class="row">
+                            <div class="stop-name height-adjust">Bayan-Bayanan Ave. / Sampaguita St.</div>
+                        </div>
+                        <div class="row">
+                            <div class="stop-name height-adjust">Bayan-Bayanan Ave. / Benedicto Compound</div>
+                        </div>
+                        <div class="row">
+                            <div class="stop-name height-adjust">Bayan-Bayanan Ave. / Meralco</div>
+                        </div>
+                        <div class="row">
+                            <div class="stop-name height-adjust">Gen Ordoñez St.</div>
+                        </div>
+                        <div class="row">
+                            <div class="stop-name height-adjust">Gen. Ordoñez St. / T. Bugallion St.</div>
+                        </div>
+                        <div class="row">
+                            <div class="stop-name height-adjust">Katipunan St.</div>
+                        </div>
+                        <div class="row">
+                            <div class="stop-name height-adjust">Katipunan St. / J Molina St.</div>
+                        </div>
+                        <div class="row">
+                            <div class="stop-name height-adjust"> Rainbow St.</div>
+                        </div>
+                        <div class="row">
+                            <div class="stop-name height-adjust">Rainbow St. / J.M. Panganiban St.</div>
+                        </div>
+                        <div class="row">
+                            <div class="stop-name height-adjust">Rainbow St. / J.Magat Salamat St.</div>
+                        </div>
+                        <div class="row">
+                            <div class="stop-name height-adjust">Rainbow St. / Velvet St.</div>
+                        </div>
+                        <div class="row">
+                            <div class="stop-name height-adjust">Rainbow St. / Crimson St.</div>
+                        </div>
+                        <div class="row">
+                            <div class="stop-name height-adjust">Rainbow St. / Tangerine St.</div>
+                        </div>
+                        <div class="row">
+                            <div class="stop-name height-adjust">Rainbow St. / Azure St.</div>
+                        </div>
+                        <div class="row">
+                            <div class="stop-name height-adjust">Rainbow St. / Lavender St.</div>
+                        </div>
+                        <div class="row">
+                            <div class="stop-name height-adjust">Rainbow St. / Gold St.</div>
+                        </div>
+                        <div class="row">
+                            <div class="stop-name height-adjust">Rainbow St. / Bronze St.</div>
+                        </div>
+                        <div class="row">
+                            <div class="stop-name height-adjust">Rainbow St. / Ivory St.</div>
+                        </div>
+                        <div class="row">
+                            <div class="stop-name height-adjust">Russet St.</div>
+                        </div>
+                        <div class="row">
+                            <div class="stop-name height-adjust">Russet St. / Sapphire St.</div>
+                        </div>
+                        <div class="row">
+                            <div class="stop-name height-adjust">Russet St. / Aquamarine St.</div>
+                        </div>
+                        <div class="row">
+                            <div class="stop-name height-adjust">Olive St.</div>
+                        </div>
+                        <div class="row">
+                            <div class="stop-name height-adjust">Olive St. / Cherry St.</div>
+                        </div>
+                        <div class="row">
+                            <div class="stop-name height-adjust">Olive St. / Lime St.</div>
+                        </div>
+                        <div class="row">
+                            <div class="stop-name height-adjust">Olive St. / Sandalwood St.</div>
+                        </div>
+                        <div class="row">
+                            <div class="stop-name height-adjust">Olive St. / Carmine St.</div>
+                        </div>
+                        <div class="row">
+                            <div class="stop-name height-adjust">Lilac St.</div>
+                        </div>
+                        <div class="row">
+                            <div class="stop-name height-adjust">Panorama Terminal</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <script src="sss_to_cubao_view.js"></script>
+</body>
+
+</html>

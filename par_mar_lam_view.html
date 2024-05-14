@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Parang-Marikina (Lamuan) - Route View</title>
+    <link rel="stylesheet" href="styles/view.css">
+    <link rel="icon" href="pictures/mt_logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <meta charset="UTF8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE-edge"/>
+    <meta name ="viewport" content="width=device-width, initial-scale=1 maximum-scale=1.0, user-scalable=no"/>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCpR0eK7UcvaY_zCyKB0UI24pU-Z7VB0XQ&libraries=visualization&callback=initMap&loading=async"  defer></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+
+<body>
+    <div class="header">
+        <a href="marikina_jeepney_routes.html">
+            <button class="back-button">
+              <span class="material-symbols-outlined" style="vertical-align: middle;">
+                arrow_back
+              </span>
+              Return
+            </button>
+          </a>
+        <a class="brand-name">
+            <h1 class="marikit" >MarikitTranspo</h1>
+        </a>
+    </div>
+    
+    <h3 class="jeepney_route">Parang - Marikina (Lamuan)</h3>
+    
+    <div class="route-container">
+        <div class="route">
+            <div clas="route-head">
+                <h2 class="route-header">Route Details</h2>
+            </div>
+            <div>
+                <ul class="route-details">
+                    <li>
+                        <span class="material-symbols-outlined">
+                            on_hub_device
+                            </span>
+                        <strong>Parang - Marikina (Via Lamuan)</strong>
+                    </li>
+                    <li>
+                        <span class="material-symbols-outlined">
+                            arrows_outward
+                            </span>
+                        Runs between <strong>Shoe Ave., Sta. Elena</strong>  and <strong>Balete Drive., Fortune</strong>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="route">
+            <div clas="route-head">
+                <h2 class="route-header">Main Route</h2>
+            </div>
+            <div>
+                <div>
+                    <div class="column-container">
+                        <div id="map1" class="map-container"></div>
+                    </div>
+                    <div class="trips">    
+                        <div class="trip-header">
+                            <div class="stop-name"><strong>Route</strong></div>
+                        </div>
+                        <div class="row"> 
+                            <div class="stop-name height-adjust">Marikina Jeepney Terminal, Shoe Ave., Sta. Elena </div>
+                        </div>
+                        <div class="row">
+                            <div class="stop-name height-adjust">E. dela Paz St., Sto.Niño</div>
+                        </div>
+                        <div class="row">
+                            <div class="stop-name height-adjust">Virginia St., Sto.Niño</div>
+                        </div>
+                        <div class="row">
+                            <div class="stop-name height-adjust">J. P. Rizal St / Homeoweners Drive Intersection</div>
+                        </div>
+                        <div class="row">
+                            <div class="stop-name height-adjust">Robinsons Supermarket, J. P. Rizal St.</div>
+                        </div>
+                        <div class="row">
+                            <div class="stop-name height-adjust">Golden Valley/South Supermarket, J. P. Rizal St.</div>
+                        </div>
+                        <div class="row">
+                            <div class="stop-name height-adjust">J. P. Rizal St / Visayas St.</div>
+                        </div>
+                        <div class="row">
+                            <div class="stop-name height-adjust">J. P. Rizal St / R. Santos St.</div>
+                        </div>
+                        <div class="row">
+                            <div class="stop-name height-adjust">J. P. Rizal St / J. Molina St.</div>
+                        </div>
+                        <div class="row">
+                            <div class="stop-name height-adjust">Bagong Silang</div>
+                        </div>
+                        <div class="row">
+                            <div class="stop-name height-adjust">Bagong Silang / H.Bautista St.</div>
+                        </div>
+                        <div class="row">
+                            <div class="stop-name height-adjust">Butihin / H.Bautista St.</div>
+                        </div>
+                        <div class="row">
+                            <div class="stop-name height-adjust">Gen. B. G. Molina</div>
+                        </div>
+                        <div class="row">
+                            <div class="stop-name height-adjust">Gen. B. G. Molina / Bantayog</div>
+                        </div>
+                        <div class="row">
+                            <div class="stop-name height-adjust">Gen. B. G. Molina / Bangkaan St.</div>
+                        </div>
+                        <div class="row">
+                            <div class="stop-name height-adjust">Gen. B. G. Molina / Bagong Silang</div>
+                        </div>
+                        <div class="row">
+                            <div class="stop-name height-adjust">Gen. B. G. Molina / Palaris St.</div>
+                        </div>
+                        <div class="row">
+                            <div class="stop-name height-adjust">Gen. B. G. Molina / Pilapil St.</div>
+                        </div>
+                        <div class="row">
+                            <div class="stop-name height-adjust">Gen. B. G. Molina / Pingkian St.</div>
+                        </div>
+                        <div class="row">
+                            <div class="stop-name height-adjust">Gen. B. G. Molina / Parnasso St.</div>
+                        </div>
+                        <div class="row">
+                            <div class="stop-name height-adjust">Gen. B. G. Molina / Paraluman Intersection</div>
+                        </div>
+                        <div class="row">
+                            <div class="stop-name height-adjust">Gen. B. G. Molina / E. Rodriguez St.</div>
+                        </div>
+                        <div class="row">
+                            <div class="stop-name height-adjust">Gen. B. G. Molina / P. Lopez St.</div>
+                        </div>
+                        <div class="row">
+                            <div class="stop-name height-adjust">Gen. B. G. Molina / NGI Market</div>
+                        </div>
+                        <div class="row">
+                            <div class="stop-name height-adjust">Gen. B. G. Molina / G. del Pilar Intersection</div>
+                        </div>
+                        <div class="row">
+                            <div class="stop-name height-adjust">Gen B. G. Molina Loading/Unloading Zone</div>
+                        </div>
+                        <div class="row">
+                            <div class="stop-name height-adjust">Gen. B. G. Molina / M. Tuazon St.</div>
+                        </div>
+                        <div class="row">
+                            <div class="stop-name height-adjust">Lawaan St.</div>
+                        </div>
+                        <div class="row">
+                            <div class="stop-name height-adjust">C.M. Recto St. / Bonanza St.</div>
+                        </div>
+                        <div class="row">
+                            <div class="stop-name height-adjust">Fortune PUV Terminal Loading/Unloading Bay</div>
+                        </div>
+                        <div class="row">
+                            <div class="stop-name height-adjust">Caltex Loading/Unloading Bay, Fortune</div>
+                        </div>
+                        <div class="row">
+                            <div class="stop-name height-adjust">Balete Drive</div>
+                        </div>
+                    </div>
+                    <div class="column-container">
+                        <div id="map2" class="map-container"></div>
+                    </div>
+                    <div class="trips">    
+                        <div class="trip-header">
+                            <div class="stop-name"><strong>Route</strong></div>
+                        </div>
+                        <div class="row">
+                            <div class="stop-name height-adjust">Balete Drive, Fortune</div>
+                        </div>
+                        <div class="row">
+                            <div class="stop-name height-adjust">Champaca St., Fortune</div>
+                        </div>
+                        <div class="row">
+                            <div class="stop-name height-adjust">Caltex Loading/Unloading Zone, Fortune</div>
+                        </div>
+                        <div class="row">
+                            <div class="stop-name height-adjust">C.M. Recto St. / Bonanza St.</div>
+                        </div>
+                        <div class="row">
+                            <div class="stop-name height-adjust">Lawaan St.</div>
+                        </div>
+                        <div class="row">
+                            <div class="stop-name height-adjust">Gen. B.G. Molina, J.P. Rizal</div>
+                        </div>
+                        <div class="row">
+                            <div class="stop-name height-adjust">Gen. B.G. Molina St. / M. Tuazon St.</div>
+                        </div>
+                        <div class="row">
+                            <div class="stop-name height-adjust">Gen. B. G. Molina / G. del Pilar Intersection</div>
+                        </div>
+                        <div class="row">
+                            <div class="stop-name height-adjust">Gen. B. G. Molina / NGI Market</div>
+                        </div>
+                        <div class="row">
+                            <div class="stop-name height-adjust">Gen. B. G. Molina / G. del Pilar Intersection</div>
+                        </div>
+                        <div class="row">
+                            <div class="stop-name height-adjust">Gen. B. G. Molina / P. Lopez St.</div>
+                        </div>
+                        <div class="row">
+                            <div class="stop-name height-adjust">Gen. B. G. Molina / E. Rodriguez St.</div>
+                        </div>
+                        <div class="row">
+                            <div class="stop-name height-adjust">Gen. B. G. Molina / Paraluman Intersection</div>
+                        </div>
+                        <div class="row">
+                            <div class="stop-name height-adjust">Gen. B. G. Molina / Parnasso St.</div>
+                        </div>
+                        <div class="row">
+                            <div class="stop-name height-adjust">Gen. B. G. Molina / Pingkian St.</div>
+                        </div>
+                        <div class="row">
+                            <div class="stop-name height-adjust">Gen. B. G. Molina / Pilapil St.</div>
+                        </div>
+                        <div class="row">
+                            <div class="stop-name height-adjust">Gen. B. G. Molina / Victoria Compound</div>
+                        </div>
+                        <div class="row">
+                            <div class="stop-name height-adjust">Gen. B. G. Molina / Daang Kastila St.</div>
+                        </div>
+                        <div class="row">
+                            <div class="stop-name height-adjust">Gen. B. G. Molina / Bagong Silang</div>
+                        </div>
+                        <div class="row">
+                            <div class="stop-name height-adjust">Gen. B. G. Molina / Bangkaan St.</div>
+                        </div>
+                        <div class="row">
+                            <div class="stop-name height-adjust">Gen. B. G. Molina / Bantayog St.</div>
+                        </div>
+                        <div class="row">
+                            <div class="stop-name height-adjust">Gen. B. G. Molina / H. Bautista St.</div>
+                        </div>
+                        <div class="row">
+                            <div class="stop-name height-adjust">J. P. Rizal St.</div>
+                        </div>
+                        <div class="row">
+                            <div class="stop-name height-adjust">J. P. Rizal St. cor. Bagong Farmers Ave., Tumana</div>
+                        </div>
+                        <div class="row">
+                            <div class="stop-name height-adjust">J. P. Rizal cor. Bayan-Bayaan Ave.</div>
+                        </div>
+                        <div class="row">
+                            <div class="stop-name height-adjust">J. P. Rizal St., Marikina City</div>
+                        </div>
+                        <div class="row">
+                            <div class="stop-name height-adjust">Golden Valley/South Supermarket, J. P. Rizal St.</div>
+                        </div>
+                        <div class="row">
+                            <div class="stop-name height-adjust">Robinsons Supermarket, J. P. Rizal St.</div>
+                        </div>
+                        <div class="row">
+                            <div class="stop-name height-adjust">Malaya St., J. P. Rizal St.</div>
+                        </div>
+                        <div class="row">
+                            <div class="stop-name height-adjust">Home Owners Drive Intersection., J. P. Rizal St.</div>
+                        </div>
+                        <div class="row">
+                            <div class="stop-name height-adjust">Bayan Access Road</div>
+                        </div>
+                        <div class="row">
+                            <div class="stop-name height-adjust">Marikina Underpass Bridge</div>
+                        </div>
+                        <div class="row">
+                            <div class="stop-name height-adjust">7 Eleven, J. P. Rizal St.</div>
+                        </div>
+                        <div class="row">
+                            <div class="stop-name height-adjust">Zapatero St., Marikina City</div>
+                        </div>
+                        <div class="row">
+                            <div class="stop-name height-adjust">W Paz</div>
+                        </div>
+                        <div class="row">
+                            <div class="stop-name height-adjust">Marikina Jeepney Terminal, Shoe Ave., Sta. Elena</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <script src="parang_to_marikina_lamuan_view.js"></script>
+</body>
+
+</html>

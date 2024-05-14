@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Calumpang-Cubao - Route View</title>
+    <link rel="icon" href="pictures/mt_logo.png" type="image/x-icon">
+    <link type="text/css" rel="stylesheet"  href="styles/view.css">
+    <meta charset="UTF8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE-edge"/>
+    <meta name ="viewport" content="width-device-width, initial-scale=1 maximum-scale=1.0, user-scalable=no"/>
+    <script defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCpR0eK7UcvaY_zCyKB0UI24pU-Z7VB0XQ&callback=initMap">
+    </script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+</head>
+
+<body>
+    <div class="header">
+        <a href="marikina_jeepney_routes.html">
+            <button class="back-button">
+              <span class="material-symbols-outlined" style="vertical-align: middle;">
+                arrow_back
+              </span>
+              Return
+            </button>
+          </a>
+        <a class="brand-name">
+            <h1 class="marikit">MarikitTranspo</h1>
+        </a>
+    </div>
+    
+    <h3 class="jeepney_route">Calumpang - Cubao</h3>
+    
+    <div class="route-container">
+        <div class="route">
+            <div clas="route-head">
+                <h2 class="route-header">Route Details</h2>
+            </div>
+            <div>
+                <ul class="route-details">
+                    <li>
+                        <span class="material-symbols-outlined">
+                            on_hub_device
+                            </span>
+                        <strong>Calumpang - Cubao</strong>
+                    </li>
+                    <li>
+                        <span class="material-symbols-outlined">
+                            arrows_outward
+                            </span>
+                        Runs between <strong>Sumulong Highway, Sto. Niño</strong> and <strong>Calderon St., Calumpang</strong>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="route">
+            <div clas="route-head">
+                <h2 class="route-header">Main Route</h2>
+            </div>
+            <div>
+                <div>
+                    <div class="column-container">
+                        <div id="map1" class="map-container"></div>
+                    </div>
+                    <div class="trips">    
+                        <div class="trip-header">
+                            <div class="stop-name"><strong>Route</strong></div>
+                        </div>
+                        <div class="row">
+                            <div class="stop-name height-adjust">A. Bonifacio Ave.</div>
+                        </div>
+                         <div class="row">
+                            <div class="stop-name height-adjust">A. Bonifacio Ave. / Barangka Barangay Hall</div>
+                        </div>
+                        <div class="row">
+                            <div class="stop-name height-adjust">Marikina Riverbanks </div>
+                        </div>
+                        <div class="row">
+                            <div class="stop-name height-adjust">A. Bonifacio Ave. / Tañong</div>
+                        </div>
+                        <div class="row">
+                            <div class="stop-name height-adjust">A. Bonifacio Ave. / Provident Village</div>
+                        </div>
+                        <div class="row">
+                            <div class="stop-name height-adjust">J.P. Rizal St.</div>
+                        </div>
+                        <div class="row">
+                            <div class="stop-name height-adjust">J.P. Rizal St. / Zapatero St.</div>
+                        </div>
+                        <div class="row">
+                            <div class="stop-name height-adjust">J.P. Rizal St. / W. Paz St.</div>
+                        </div>
+                        <div class="row">
+                            <div class="stop-name height-adjust">J.P. Rizal St. / Kapitan Moy St.</div>
+                        </div>
+                        <div class="row">
+                            <div class="stop-name height-adjust">J.P. Rizal St. / Deguanco St.</div>
+                        </div>
+                        <div class="row">
+                            <div class="stop-name height-adjust">J.P. Rizal St. / V. Gomez St.</div>
+                        </div>
+                        <div class="row">
+                            <div class="stop-name height-adjust">J.P. Rizal St. / I. Mendoza St.</div>
+                        </div>
+                        <div class="row">
+                            <div class="stop-name height-adjust">J.P. Rizal St. / Fernando Ave.</div>
+                        </div>
+                        <div class="row">
+                            <div class="stop-name height-adjust">J.P. Rizal St. / A. Mabini St.</div>
+                        </div>
+                        <div class="row">
+                            <div class="stop-name height-adjust"> J.P. Rizal St., E dela Paz St., Nicanor Roxas St. Intersection </div>
+                        </div>
+                        <div class="row">
+                            <div class="stop-name height-adjust">J.P. Rizal St., Gen F. Santos St., M. Roxas St. Intersection</div>
+                        </div>
+                        <div class="row">
+                            <div class="stop-name height-adjust">J.P. Rizal St. / J. M. Basa St.</div>
+                        </div>
+                        <div class="row">
+                            <div class="stop-name height-adjust">M.H. del Pilar St.</div>
+                        </div>
+                    </div>
+                    <div class="column-container">
+                        <div id="map2" class="map-container"></div>
+                    </div>
+                    <div class="trips">    
+                        <div class="trip-header">
+                            <div class="trip-name"><strong>Route</strong></div>
+                        </div>
+                        <div class="row">
+                            <div class="stop-name height-adjust">M.H. del Pilar St.</div>
+                        </div>
+                        <div class="row">
+                            <div class="stop-name height-adjust">M.H. del Pilar St. / Kasi St.</div>
+                        </div>
+                        <div class="row">
+                            <div class="stop-name height-adjust">M.H. del Pilar St. / Kamumu St.</div>
+                        </div>
+                        <div class="row">
+                            <div class="stop-name height-adjust">M.H. del Pilar St. / Katipunan St.</div>
+                        </div>
+                        <div class="row">
+                            <div class="stop-name height-adjust">Nicanor Roxas St.</div>
+                        </div>
+                        <div class="row">
+                            <div class="stop-name height-adjust">Nicanor Roxas St. / J.M. Basa St.</div>
+                        </div>
+                        <div class="row">
+                            <div class="stop-name height-adjust">Nicanor Roxas St. / San Roque Loading/Unloading Bay</div>
+                        </div>
+                        <div class="row">
+                            <div class="stop-name height-adjust">Nicanor Roxas St. / M.A. Roxas St.</div>
+                        </div>
+                        <div class="row">
+                            <div class="stop-name height-adjust">E. dela Paz St.</div>
+                        </div>
+                        <div class="row">
+                            <div class="stop-name height-adjust">E. dela Paz St. / Santa Ana</div>
+                        </div>
+                        <div class="row">
+                            <div class="stop-name height-adjust">E. dela Paz St. / I. Mendoza St.</div>
+                        </div>
+                        <div class="row">
+                            <div class="stop-name height-adjust">E. dela Paz St. / V. Gomez St.</div>
+                        </div>
+                        <div class="row">
+                            <div class="stop-name height-adjust">E. dela Paz St. / Kapitan Moy St.</div>
+                        </div>
+                        <div class="row">
+                            <div class="stop-name height-adjust">W. Paz St.</div>
+                        </div>
+                        <div class="row">
+                            <div class="stop-name height-adjust">Shoe Ave.</div>
+                        </div>
+                        <div class="row">
+                            <div class="stop-name height-adjust">Shoe Ave. Loading/Unloading Zone</div>
+                        </div>
+                        <div class="row">
+                            <div class="stop-name height-adjust">Sumulong Highway</div>
+                        </div>
+                        <div class="row">
+                            <div class="stop-name height-adjust">Sumulong Highway / E. dela Paz St.</div>
+                        </div>
+                        <div class="row">
+                            <div class="stop-name height-adjust">Sumulong Highway / P. Burogos St.</div>
+                        </div>
+                        <div class="row">
+                            <div class="stop-name height-adjust">Sumulong Highway / M. Cruz St.</div>
+                        </div>
+                        <div class="row">
+                            <div class="stop-name height-adjust">A. Bonifacio / A. Flores St.</div>
+                        </div>
+                        <div class="row">
+                            <div class="stop-name height-adjust">A. Bonifacio / Provident Village</div>
+                        </div>
+                        <div class="row">
+                            <div class="stop-name height-adjust">A. Bonifacio / Tañong</div>
+                        </div>
+                        <div class="row">
+                            <div class="stop-name height-adjust">A. Bonifacio / Marikina Riverbanks</div>
+                        </div>
+                        <div class="row">
+                            <div class="stop-name height-adjust">A. Bonifacio / Barangka Barangay Hall</div>
+                        </div>
+                        <div class="row">
+                            <div class="stop-name height-adjust">A. Bonifacio Ave</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <script src="calumpang_to_cubao_view.js"></script>
+</body>
+
+</html>

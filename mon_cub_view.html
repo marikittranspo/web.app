@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Montalban-Cubao - Route View</title>
+    <link rel="stylesheet" href="styles/view.css">
+    <link rel="icon" href="pictures/mt_logo.png" type="image/x-icon">
+    <meta charset="UTF8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE-edge"/>
+    <meta name ="viewport" content="width=device-width, initial-scale=1 maximum-scale=1.0, user-scalable=no"/>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCpR0eK7UcvaY_zCyKB0UI24pU-Z7VB0XQ&libraries=visualization&callback=initMap&loading=async"  defer></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+
+<body>
+    <div class="header">
+        <a href="mar_san_mon.html">
+            <button class="back-button">
+              <span class="material-symbols-outlined" style="vertical-align: middle;">
+                arrow_back
+              </span>
+              Return
+            </button>
+          </a>
+        <a class="brand-name">
+            <h1 class="marikit" >MarikitTranspo</h1>
+        </a>
+    </div>
+    
+    <h3 class="jeepney_route">Montalban - Cubao</h3>
+    
+    <div class="route-container">
+        <div class="route">
+            <div clas="route-head">
+                <h2 class="route-header">Route Details</h2>
+            </div>
+            <div>
+                <ul class="route-details">
+                    <li>
+                        <span class="material-symbols-outlined">
+                            on_hub_device
+                            </span>
+                        <strong>Montalban - Cubao</strong>
+                    </li>
+                    <li>
+                        <span class="material-symbols-outlined">
+                            arrows_outward
+                            </span>
+                        Runs between <strong>J.P. Rizal, Nangka</strong>  and <strong>Mayor Gil Fernando Ave. / Marcos Highway Intersection</strong>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="route">
+            <div clas="route-head">
+                <h2 class="route-header">Main Route</h2>
+            </div>
+            <div>
+                <div>
+                    <div class="column-container">
+                        <div id="map1" class="map-container"></div>
+                    </div>
+                    <div class="trips">    
+                        <div class="trip-header">
+                            <div class="stop-name"><strong>Route</strong></div>
+                        </div>
+                        <div class="row"> 
+                            <div class="stop-name height-adjust">Mayor Gil Fernando Ave., San Roque</div>
+                        </div>
+                        <div class="row">
+                            <div class="stop-name height-adjust">Mayor Gil Fernando Ave. / Dragon St.</div>
+                        </div>
+                        <div class="row">
+                            <div class="stop-name height-adjust">Mayor Gil Fernando Ave. / Sta. Ana Intersection</div>
+                        </div>
+                        <div class="row">
+                            <div class="stop-name height-adjust">Mayor Gil Fernando Ave. / Almond Nut St.</div>
+                        </div>
+                        <div class="row">
+                            <div class="stop-name height-adjust">Mayor Gil Fernando Ave. / Chestnut St.</div>
+                        </div>
+                        <div class="row">
+                            <div class="stop-name height-adjust">Mayor Gil Fernando Ave. / J.P. Laurel Sr. St.</div>
+                        </div>
+                        <div class="row">
+                            <div class="stop-name height-adjust">Mayor Gil Fernando Ave. / Mount Everest St.</div>
+                        </div>
+                        <div class="row">
+                            <div class="stop-name height-adjust">Mayor Gil Fernando Ave. / Mount Vernon St.</div>
+                        </div>
+                        <div class="row">
+                            <div class="stop-name height-adjust">Mayor Gil Fernando Ave. / Sumulong Highway Intersection</div>
+                        </div>
+                        <div class="row">
+                            <div class="stop-name height-adjust">Marquinton Loading/Unloading Bay</div>
+                        </div>
+                        <div class="row">
+                            <div class="stop-name height-adjust">Mayor Gil Fernando Ave. / Guerilla St.</div>
+                        </div>
+                        <div class="row">
+                            <div class="stop-name height-adjust">Mayor Gil Fernando Ave. / E. Mendoza St.</div>
+                        </div>
+                        <div class="row">
+                            <div class="stop-name height-adjust">Aquilina St.</div>
+                        </div>
+                        <div class="row">
+                            <div class="stop-name height-adjust">Aquilina St. / Fifth</div>
+                        </div>
+                        <div class="row">
+                            <div class="stop-name height-adjust">Aquilina St. / 4th St.</div>
+                        </div>
+                        <div class="row">
+                            <div class="stop-name height-adjust">Aquilina St. / Col. Divino</div>
+                        </div>
+                        <div class="row">
+                            <div class="stop-name height-adjust">E. Santos</div>
+                        </div>
+                        <div class="row">
+                            <div class="stop-name height-adjust">E. Santos / Exequiel Intersection</div>
+                        </div>
+                        <div class="row">
+                            <div class="stop-name height-adjust">E. Santos / Cepeda St. Intersection</div>
+                        </div>
+                        <div class="row">
+                            <div class="stop-name height-adjust">E. Santos / J. Molina St. Intersection</div>
+                        </div>
+                        <div class="row">
+                            <div class="stop-name height-adjust">Concepcion Loading/Unloading Bay</div>
+                        </div>
+                        <div class="row">
+                            <div class="stop-name height-adjust">Bayan-Bayanan Ave</div>
+                        </div>
+                        <div class="row">
+                            <div class="stop-name height-adjust">Bagong Silang</div>
+                        </div>
+                        <div class="row">
+                            <div class="stop-name height-adjust">Bagong Silang / H. Bautista St.</div>
+                        </div>
+                        <div class="row">
+                            <div class="stop-name height-adjust">H. Bautista / Gen. B. G. Molina Intersection</div>
+                        </div>
+                        <div class="row">
+                            <div class="stop-name height-adjust">H. Bautista / G. Cruz St.</div>
+                        </div>
+                        <div class="row">
+                            <div class="stop-name height-adjust">Fairlane Market, J.P. Rizal</div>
+                        </div>
+                        <div class="row">
+                            <div class="stop-name height-adjust">J. P. Rizal St / Kingsway Street Intersection</div>
+                        </div>
+                        <div class="row">
+                            <div class="stop-name height-adjust">J. P. Rizal St / Egypt Street Intersection</div>
+                        </div>
+                        <div class="row">
+                            <div class="stop-name height-adjust">J. P. Rizal St / Japan Avenue Intersection</div>
+                        </div>
+                        <div class="row">
+                            <div class="stop-name height-adjust">J. P. Rizal St / Buen-Mar Ave Intersection</div>
+                        </div>
+                        <div class="row">
+                            <div class="stop-name height-adjust">Nangka, J.P. Rizal</div>
+                        </div>
+                    </div>
+                    <div class="column-container">
+                        <div id="map2" class="map-container"></div>
+                    </div>
+                    <div class="trips">    
+                        <div class="trip-header">
+                            <div class="trip-name"><strong>Route</strong></div>
+                        </div>
+                        <div class="row">
+                            <div class="stop-name height-adjust">Nangka, J.P. Rizal</div>
+                        </div>
+                        <div class="row">
+                            <div class="stop-name height-adjust">J. P. Rizal St / Buen-Mar Ave Intersection</div>
+                        </div>
+                        <div class="row">
+                            <div class="stop-name height-adjust">J. P. Rizal St / Japan Avenue Intersection</div>
+                        </div>
+                        <div class="row">
+                            <div class="stop-name height-adjust">J. P. Rizal St / Egypt Street Intersection</div>
+                        </div>
+                        <div class="row">
+                            <div class="stop-name height-adjust">J. P. Rizal St / Kingsway Street Intersection</div>
+                        </div>
+                        <div class="row">
+                            <div class="stop-name height-adjust">Fairlane Market, J.P. Rizal</div>
+                        </div>
+                        <div class="row">
+                            <div class="stop-name height-adjust">Haiti St.</div>
+                        </div>
+                        <div class="row">
+                            <div class="stop-name height-adjust">Chile St.</div>
+                        </div>
+                        <div class="row">
+                            <div class="stop-name height-adjust">Chile St. / Panama St.</div>
+                        </div>
+                        <div class="row">
+                            <div class="stop-name height-adjust">Bantayog St.</div>
+                        </div>
+                        <div class="row">
+                            <div class="stop-name height-adjust">Bantayog St. / Gen. B.G. Molina Intersection</div>
+                        </div>
+                        <div class="row">
+                            <div class="stop-name height-adjust">Bantayog St. / Butihin St.</div>
+                        </div>
+                        <div class="row">
+                            <div class="stop-name height-adjust">Bantayog St. / Bagong Silang</div>
+                        </div>
+                        <div class="row">
+                            <div class="stop-name height-adjust">Flores St.</div>
+                        </div>
+                        <div class="row">
+                            <div class="stop-name height-adjust">C. Bautista St.</div>
+                        </div>
+                        <div class="row">
+                            <div class="stop-name height-adjust">C. Bautista St. / Bayan-bayanan Ave. Intersection</div>
+                        </div>
+                        <div class="row">
+                            <div class="stop-name height-adjust">C. Bautista St. / Bayan-bayanan Ave. Intersection</div>
+                        </div>
+                        <div class="row">
+                            <div class="stop-name height-adjust">E.G. Manalo Loading/Unloading Bay</div>
+                        </div>
+                        <div class="row">
+                            <div class="stop-name height-adjust">E.G. Manalo St. / J. Molina St. Intersection</div>
+                        </div>
+                        <div class="row">
+                            <div class="stop-name height-adjust">E.G. Manalo St. / Cepeda St. Intersection</div>
+                        </div>
+                        <div class="row">
+                            <div class="stop-name height-adjust">E.G. Manalo St. / Exequiel St. Intersection</div>
+                        </div>
+                        <div class="row">
+                            <div class="stop-name height-adjust">Aquilina St.</div>
+                        </div>
+                        <div class="row">
+                            <div class="stop-name height-adjust">Aquilina St. / Col. Divino St.</div>
+                        </div>
+                        <div class="row">
+                            <div class="stop-name height-adjust">Aquilina St. / 4th St.</div>
+                        </div>
+                        <div class="row">
+                            <div class="stop-name height-adjust">Aquilina St. / Fifth</div>
+                        </div>
+                        <div class="row">
+                            <div class="stop-name height-adjust">Mayor Gil Fernando Ave.</div>
+                        </div>
+                        <div class="row">
+                            <div class="stop-name height-adjust">Mayor Gil Fernando Ave. / Guerilla St.</div>
+                        </div>
+                        <div class="row">
+                            <div class="stop-name height-adjust">Mayor Gil Fernando Ave. / Marquinton</div>
+                        </div>
+                        <div class="row">
+                            <div class="stop-name height-adjust">Mayor Gil Fernando Ave. / Sumulong Highway Intersection</div>
+                        </div>
+                        <div class="row">
+                            <div class="stop-name height-adjust">Mayor Gil Fernando Ave Loading/Unloading Bay</div>
+                        </div>
+                        <div class="row">
+                            <div class="stop-name height-adjust">Mayor Gil Fernando Ave. / Lark St.</div>
+                        </div>
+                        <div class="row">
+                            <div class="stop-name height-adjust">Mayor Gil Fernando Ave. / J. Chanyungco St.</div>
+                        </div>
+                        <div class="row">
+                            <div class="stop-name height-adjust">Mayor Gil Fernando Ave. / Falcon St.</div>
+                        </div>
+                        <div class="row">
+                            <div class="stop-name height-adjust">Mayor Gil Fernando Ave. / Bacolod St.</div>
+                        </div>
+                        <div class="row">
+                            <div class="stop-name height-adjust">Mayor Gil Fernando Ave. / Redwood St.</div>
+                        </div>
+                        <div class="row">
+                            <div class="stop-name height-adjust">Mayor Gil Fernando Ave. / Chestnut St.</div>
+                        </div>
+                        <div class="row">
+                            <div class="stop-name height-adjust">Mayor Gil Fernando Ave. / Sta. Ana Intersection</div>
+                        </div>
+                        <div class="row">
+                            <div class="stop-name height-adjust">Mayor Gil Fernando Ave. / Dragon St.</div>
+                        </div>
+                        <div class="row"> 
+                            <div class="stop-name height-adjust">Mayor Gil Fernando Ave., San Roque</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <script src="montalban_to_cubao_view.js"></script>
+
+    <script>
+        function goBack() {
+            window.history.back();
+        }
+    </script>
+</body>
+
+</html>
