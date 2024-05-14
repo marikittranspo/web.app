@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Marikina - Antipolo</title>
+    <link rel="icon" href="pictures/mt_logo.png" type="image/x-icon">
+    <link type="text/css" rel="stylesheet"  href="styles/jeepney_list.css">
+    <meta charset="UTF8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE-edge"/>
+    <meta name ="viewport" content="width=device-width, initial-scale=1 maximum-scale=1.0, user-scalable=no"/>
+    <script defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCpR0eK7UcvaY_zCyKB0UI24pU-Z7VB0XQ&callback=initMap">
+    </script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+</head>
+
+<body>
+  <nav>
+    <a href="jeepney.html">
+      <button class="back-button">
+        <span class="material-symbols-outlined" style="vertical-align: middle;">
+          arrow_back
+        </span>
+        Jeepney
+      </button>
+    </a>
+    <a class="brand-name">
+      MarikitTranspo
+    </a>
+  </nav>
+
+    <h1 class="marikit">MarikitTranspo</h1>
+   
+    <div class="column-container">
+        <p class="jeepneys">MARIKINA TO ANTIPOLO</p>
+
+        <div class="app-column"> 
+            <div class="app-container">
+              <div class="left-section">
+                <img src="jeep-pictures/Marikina - Paenaan.jpg" alt="Jeepney">
+              </div>
+            <div class="right-section">
+                <div class="route-label">MARIKINA - PAENAAN</div>
+                <div class="route_button-container">
+                    <button class="route-button" onclick="redirectToViewRouteOne()">View Route</button>
+                    <button class="route-button" onclick="redirectToSakayNa()">Sakay Na!</button>
+                    <button class="route-button">Save</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="app-column"> 
+            <div class="app-container">
+              <div class="left-section">
+                <img src="jeep-pictures/Marikina - Mambugan.jpg" alt="Jeepney">
+              </div>
+            <div class="right-section">
+                <div class="route-label">MARIKINA - MAMBUGAN</div>
+                <div class="route_button-container">
+                    <button class="route-button" onclick="redirectToViewRouteTwo()">View Route</button>
+                    <button class="route-button" onclick="redirectToSakayNa()">Sakay Na!</button>
+                    <button class="route-button">Save</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="app-column"> 
+            <div class="app-container">
+              <div class="left-section">
+                <img src="jeep-pictures/Marikina - Antipolo.jpg" alt="Jeepney">
+              </div>
+            <div class="right-section">
+                <div class="route-label">MARIKINA - ANTIPOLO</div>
+                <div class="route_button-container">
+                    <button class="route-button" onclick="redirectToViewRouteThree()">View Route</button>
+                    <button class="route-button" onclick="redirectToSakayNa()">Sakay Na!</button>
+                    <button class="route-button">Save</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="app-column"> 
+            <div class="app-container">
+              <div class="left-section">
+                <img src="jeep-pictures/Marikina - Bagong Nayon.jpg" alt="Jeepney">
+              </div>
+            <div class="right-section">
+                <div class="route-label">MARIKINA - BAGONG NAYON II</div>
+                <div class="route_button-container">
+                    <button class="route-button" onclick="redirectToViewRouteFour()">View Route</button>
+                    <button class="route-button" onclick="redirectToSakayNa()">Sakay Na!</button>
+                    <button class="route-button">Save</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+function redirectToViewRouteOne() {
+    window.location.href = 'mar_pae_view.html';
+}
+
+function redirectToViewRouteTwo() {
+    window.location.href = 'mar_mam_view.html';
+}
+
+function redirectToViewRouteThree() {
+    window.location.href = 'mar_ant_view.html';
+}
+
+function redirectToViewRouteFour() {
+    window.location.href = 'mar_bag_view.html';
+}
+function redirectToSakayNa() {
+    window.location.href = 'sakay_na.html';
+}
+</script>
+</html>
