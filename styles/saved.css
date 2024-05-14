@@ -1,0 +1,82 @@
+body{
+  height: 90vh;
+}
+.saved-header {
+  color:#C0F0F7;
+  font-weight: bold;
+  font-family: Verdana;
+  text-shadow: #0E1899 2px 1.5px;
+  text-align: center;
+  padding-top: 65px;
+}
+
+.container {
+  width: 80vw;
+  margin: 0 auto;
+}S
+
+.header {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.button-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+button.location-item {
+  background-color: #E7F6FF;
+  padding: 10px 15px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  text-align: left;
+  width: 300px;
+  height: 90px;
+  display: flex;
+  align-items: center;
+  transition: background-color 0.3s;
+  justify-content: center;
+  font-family: Verdana, sans-serif;
+  font-weight: bold;
+}
+
+.icon {
+  margin: 5vw;
+}
+
+
+button.location-item:hover {
+  background-color: #4a6075;
+}
+
+button.location-item i {
+  margin-right: 10px;
+}
+
+button.location-item span {
+  flex-grow: 1;
+}
+button.location-item .privacy {
+  font-size: 12px;
+  opacity: 0.7;
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+
+.icon {
+  width: 25px;
+}
+

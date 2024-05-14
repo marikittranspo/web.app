@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MarikitTranspo</title>
+    <link rel="icon" href="pictures/mt_logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles/home.css">
+    <link media="all" href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link media="all" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"/>
+    <script defer src="search.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCpR0eK7UcvaY_zCyKB0UI24pU-Z7VB0XQ&loading=async&callback=initMap"></script>
+</head>
+<body>
+    <header>
+        <nav class="top-nav">
+            <div class="logo-container">
+                <a class="marikitlogo" href="home.html">
+                    <img src="pictures/mtlogo.png" alt="MarikitTranspo Logo" class="logo">
+                </a>
+                <a>
+                    <span class="brand-name">MarikitTranspo</span>
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <div class="bottom-nav">
+        <nav class="bot">
+            <a href="home.html" class="nav__link nav__link--active">
+                <i class="material-icons nav__icon">home</i>
+                <span class="nav__text">HOME</span>
+            </a>
+            <a href="jeepney.html" class="nav__link">
+                <i class="material-icons nav__icon">directions_bus</i>
+                <span class="nav__text">JEEP</span>
+            </a>
+            <a href="maps.html" class="nav__link">
+                <i class="material-icons nav__icon">location_on</i>
+                <span class="nav__text">MAPS</span>
+            </a>
+            <a href="saved.html" class="nav__link">
+                <i class="material-icons nav__icon">bookmark_border</i>
+                <span class="nav__text">SAVE</span>
+            </a>
+        </nav>
+
+        <div class="search-container">
+          <form>
+            <div class="search">
+              <span class="search-icon material-symbols-outlined">search</span>
+              <input type="text" id="search-bar" class="search-input" placeholder="Search jeepney routes">
+              <ul id="results"></ul>
+            </div>
+          </form>
+        </div>
+
+        <div id="map"></div>
+        <script src="home.js"></script>
+
+        <div class="square">
+            <p>Recent</p>
+        </div>
+        <div class="square-background"></div>
+    </div>
+</body>
+
+<script src="scripts/search.js"></script>
+
+</html>

@@ -1,0 +1,145 @@
+@import url('https://fonts.cdnfonts.com/css/verdana-pro-cond');
+
+body {
+  background: rgb(21,90,193);
+  background: radial-gradient(circle, rgba(21,90,193,1) 0%, rgba(151,230,255,1) 100%);
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  position: fixed;
+  top: 0; 
+  background-color: #001965;
+  height: 50px; 
+  width: 100%;
+  color: white;
+  display: flex;
+  font-family: Verdana, sans-serif;
+  align-items: center;
+  z-index: 1;
+  padding: 5px; 
+}
+
+.marikit {
+  padding-top: 45px;
+  font-size: 35px;
+  text-align: center;
+  color:#C0F0F7;
+  font-weight: bold;
+  font-family: Verdana;
+  text-shadow: #0E1899 2px 1.5px;
+}
+
+.jeepneys {
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  font-family: Verdana;
+  text-shadow: #0E1899 2px 1.5px;
+  font-size: 20px;
+}
+
+.app-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 10px;
+}
+
+.app-container {
+  display: flex;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  border-radius: 8px;
+  overflow: hidden;
+  flex-direction: row;
+  height: 200px;
+}
+
+.left-section img {
+  height: 200px;
+  margin: 0 auto;
+  object-fit: cover;
+}
+
+.right-section {
+  padding: 20px;
+  background-color: #73C2FB;
+  width: 150px;
+}
+
+.route-button {
+  font-size: 12px;
+  background: linear-gradient(180deg, #7ec9f5, #3957ed);
+  padding: 10px;
+  cursor: pointer;
+  display: inline-block;
+  border-radius: 20px;
+  color: white;
+  width: 110px;
+  font-weight: bold;
+  font-family: Verdana;
+  border: none;
+}
+
+.route_button-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.route-button:hover {
+  background: linear-gradient(180deg, #ffffff, #ffffff); /* Adjust as needed */
+  color: black;
+}
+
+.route-label {
+  font-size: 10px;
+  background-color: none;
+  text-align: center;
+  font-family: Verdana;
+  font-weight: bold;
+  padding: none;
+  margin: none;
+  color: black;
+  text-shadow: white 1px .5px;
+}
+  
+.navbar ul li.selected {
+  background-color:rgb(21,90,193); /* Set your desired highlight color */
+  color: #ffffff; /* Set your desired text color */
+  border-radius: 15px;
+}
+
+.back-button {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  border-radius: 20px;
+  font-weight: bold;
+  font-family: Verdana;
+  border: none;
+  background-color: #5491F5;
+  color: white;
+  font-size: 15px;
+  padding: 1px; 
+  width: 100px;
+  margin: 10px;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  .brand-name {
+    margin-left: auto;
+    padding: 15px;
+    font-weight: bold;
+    font-family: Verdana;
+    font-size: 20px;
+  }

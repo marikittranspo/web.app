@@ -1,0 +1,83 @@
+body {
+  background: rgb(246,252,255);
+  background: radial-gradient(circle, rgba(246,252,255,1) 35%, rgba(219,225,255,1) 100%);
+  height: 100vh;
+}
+
+h1 {
+  font-family: Verdana, sans-serif;
+  color: #0E1889;
+  text-shadow: #5491F5 1.5px 2px;
+  text-align: center;
+  font-size: 35px;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+
+.favorites {
+  font-family: 'Monstserrat', sans-serif;
+  color: #0E1889;
+  font-weight: bold;
+  font-size: 30px;
+  padding-bottom: 15px;
+}
+
+
+.back-button {
+  background-color: Transparent;
+  background-repeat:no-repeat;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;        
+  align-items: right;
+  float: right;
+}
+
+.buttons {
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.edit-button {
+  background: rgb(21,90,193);
+  background: linear-gradient(270deg, rgba(21,90,193,1) 35%, rgba(151,230,255,1) 100%);
+  color: black;
+  font-weight: bold;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 30px;
+  cursor: pointer;
+  width: 110px;
+}
+
+.add-button {
+  background: rgb(21,90,193);
+  background: linear-gradient(270deg, rgba(21,90,193,1) 35%, rgba(151,230,255,1) 100%);
+  color: black;
+  font-weight: bold;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 30px;
+  cursor: pointer;
+  width: 110px;
+}
+
+.view-routes {
+  text-align: right;
+  padding: 20px;
+  padding-top: 380px;
+}
+
+.view-routes button {
+  background: rgb(21,90,193);
+  background: linear-gradient(270deg, rgba(21,90,193,1) 35%, rgba(151,230,255,1) 100%);
+  border-radius: 20px;
+  font-weight: bold;
+  height: 50px;
+  width: 135px;
+  padding: 2px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
